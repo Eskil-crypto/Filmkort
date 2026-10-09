@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keanu Reeves - Filmkort</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+<script src="index.js" defer></script>
+    <header>
+        <h1> WHOA! Filmkort</h1>
+        <p>Oppdag tilfeldige filmøyeblikk med Keanu Reeves</p>
+    </header>
+
+    <main>
+        <article class="filmkort">
+
+            <img id="plakat" src="" alt="Filmplakat">
+
+            <section class="film-info">
+                <h2 id="tittel">Laster film...</h2>
+
+                <p><strong>År:</strong> <span id="aar">-</span></p>
+                <p><strong>Regissør:</strong> <span id="regissor">-</span></p>
+                <p><strong>Rollefigur:</strong> <span id="rollefigur">-</span></p>
+                <p><strong>Filmsitat:</strong> <span id="sitat">-</span></p>
+                <p><strong>Tidspunkt:</strong> <span id="tidspunkt">-</span></p>
+                <p><strong>Filmens varighet:</strong> <span id="varighet">-</span></p>
+
+                <h3>Filmklipp</h3>
+                <video id="video" controls playsinline>
+                    Nettleseren din støtter ikke video.
+                </video>
+
+                <button id="ny-film">Ny film</button>
+                <p id="status" role="status" aria-live="polite"></p>
+            </section>
+
+        </article>
+    </main>
+
+    <footer>
+        <p>Data levert av WHOA API</p>
+    </footer>
+
+</body>
+</html>
+

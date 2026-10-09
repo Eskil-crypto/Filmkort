@@ -1,0 +1,158 @@
+
+/* Hele nettsiden */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #100e19, #29213b);
+    color: white;
+    min-height: 100vh;
+    padding: 30px 20px;
+}
+
+/* Overskrift */
+header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+h1 {
+    font-size: 38px;
+    color: #f5c76b;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #c5bfd1;
+    font-size: 16px;
+}
+
+/* Filmkortet */
+.filmkort {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    background: #1d1929;
+    border: 1px solid #40364f;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Filmplakat */
+#plakat {
+    width: 280px;
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+    object-fit: cover;
+}
+
+/* Informasjon om filmen */
+.film-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.film-info h2 {
+    color: #f5c76b;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.film-info p {
+    margin-bottom: 12px;
+    padding: 12px;
+    background: #292438;
+    border-radius: 8px;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+.film-info strong {
+    color: #f5c76b;
+}
+
+/* Videoklipp */
+video {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 12px;
+    background: black;
+}
+
+/* Knapp */
+button {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    background: linear-gradient(135deg, #f5d58b, #c9953d);
+    color: #17111b;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(245, 199, 107, 0.25);
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: wait;
+}
+
+/* Statusmelding */
+#status {
+    margin-top: 15px;
+    color: #c5bfd1;
+    font-size: 14px;
+}
+
+/* Bunntekst */
+footer {
+    text-align: center;
+    margin-top: 35px;
+    color: #aaa2b8;
+    font-size: 14px;
+}
+
+/* Mobil og nettbrett */
+@media (max-width: 650px) {
+    body {
+        padding: 20px 12px;
+    }
+
+    h1 {
+        font-size: 29px;
+    }
+
+    .filmkort {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    #plakat {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .film-info {
+        width: 100%;
+    }
+
+    .film-info h2 {
+        font-size: 25px;
+    }
+}
